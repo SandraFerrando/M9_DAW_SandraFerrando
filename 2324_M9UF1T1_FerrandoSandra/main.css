@@ -1,0 +1,182 @@
+/* main.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, rgb(195, 181, 246), rgb(161, 228, 217), rgb(200, 254, 200));    display: flex;
+    justify-content: center;  
+    align-items: center;      
+}
+
+.container {
+    margin-top: 5%;
+    width: 90%;             
+    padding: 80px;
+    background: linear-gradient(45deg, rgb(242, 208, 255), rgb(208, 255, 247));
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1{
+    color: #333;
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: 40px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+form {
+    border-radius: 30px;
+    background-color: #c6cef8;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+input[type="text"] {
+    width: 100%;             
+    padding: 25px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 230px;            
+    padding: 10px;
+    margin: 5px;
+    font-size: 35px;
+    background-color: #a468db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8733d5;
+}
+
+#resultat {
+    border-radius: 30px;
+    background-color: #c6cef8;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 22px;
+    color: #333;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+#historial {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+#historial li {
+    border: 1px solid #a8b4f2;
+    background-color: #fff;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles for desktop */
+@media screen and (min-width: 990px) {
+    .container {
+        margin-top: 1%;
+        padding-top: 60px;
+        max-width: 1800px;
+        margin: 5% auto;
+
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+    .form-wrapper {
+        display: flex;
+        flex-direction: row; /* Cambia la dirección a filas */
+        justify-content: space-between; /* Distribuye el espacio entre los formularios */
+        flex-wrap: wrap; /* Asegura que si no caben en una fila, se distribuyan adecuadamente */
+    }
+
+    form {
+        width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    input[type="text"] {
+        width: calc(50% - 10px);
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    button {
+        width: calc(45% - 10px);
+        font-size: 24px;
+        padding: 15px 10px;
+    }
+
+    .small-button {
+        width: 120px; 
+        padding: 5px;
+        font-size: 26px; 
+    }
+    
+    .large-button {
+        width: 190px; 
+        padding: 15px; 
+        font-size: 20px; 
+    }
+
+    input[type="text"], button {
+        width: 100%;
+    }
+
+    #resultat {
+        font-size: 28px;
+        padding: 30px;
+        width: 70%;
+        margin-left: 15%;
+
+    }
+
+    #historial {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    #historial li {
+        font-size: 18px;
+    }
+}
